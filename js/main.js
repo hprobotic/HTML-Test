@@ -1,3 +1,4 @@
+new WOW().init();
 var W1t = {
     'g': function(t, e) {
         return t > e;
@@ -39,6 +40,7 @@ function onTouch() {
     }
 }
 $(document)[W1t.s](function() {
+
     var D = ".navbar-toggle",
         U = "is",
         n = "click",
