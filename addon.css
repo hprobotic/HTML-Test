@@ -82,29 +82,29 @@
 .bx-controls .bx-pager-item a.active {
 	background: #000000
 }
-.divBanner {
+.main-slider{
 	overflow: hidden;
 	background: #00a1df;
 	padding-bottom: 60px;
 	border-bottom: 1px solid #9a9a9a
 }
-.divBanner .bx-viewport {
+.main-slider .bx-viewport {
 	overflow: visible !important
 }
-.divBanner .bx-pager {
+.main-slider .bx-pager {
 	position: absolute;
 	left: 0;
 	bottom: -40px;
 	width: 100%;
 	padding: 0
 }
-.divBanner .bx-controls .bx-pager-item {
+.main-slider .bx-controls .bx-pager-item {
 	display: inline-block;
 	text-align: center;
 	padding: 0 22px;
 	line-height: 0;
 }
-.divBanner .bx-controls .bx-pager-item a {
+.main-slider .bx-controls .bx-pager-item a {
 	width: 17px;
 	height: 17px;
 	background: #ffffff;
@@ -119,11 +119,11 @@
 	text-indent: -1000px;
 	overflow: hidden;
 }
-.divBanner .bx-controls .bx-pager-item a.active {
+.main-slider .bx-controls .bx-pager-item a.active {
 	background: #e36d4a;
 }
 /* Gal */
-.divSlider01 {
+.main-gallery {
 	margin: 35px 0 0;
 	background: #dadada;
 	border-bottom: 1px solid #a7a7a7;
@@ -131,7 +131,7 @@
 	padding: 0 0 60px;
 	position: relative;
 }
-.divSlider01:before {
+.main-gallery:after {
 	content: "";
 	position: absolute;
 	left: 0;
@@ -140,22 +140,22 @@
 	width: 100%;
 	background: #00a1df
 }
-.divSlider01 .container .active {
+.main-gallery .container .active {
 	background: #747474
 }
-.divSlider01 .container .active .name {
+.main-gallery .container .active .name {
 	color:#452600;
 }
-.itemProd {
+.gal-item {
 	margin: 27px 21px;
 	border: 1px solid #fff;
 	position: relative;
 }
-.itemProd img {
+.gal-item img {
 	display: block;
 	width: 100%
 }
-.itemProd .info {
+.gal-item .gal-capt {
 	position: absolute;
 	left: 0;
 	bottom: 0;
@@ -165,14 +165,14 @@
 	background:hsla(0,0%,100%,.6);
 	color:#452600;
 }
-.itemProd .viewmore {
+.gal-item .gal-capt .readmore {
 	color: #fff;
 	line-height: 1em;
 	padding: 16px 12px;
 	position: relative;
 }
-.itemProd .viewmore:before {
-	background: url(img/common/bullet01.png) no-repeat 0 0;
+.gal-item .gal-capt .readmore:before {
+	background: url(images/w-a-right.png) no-repeat 0 0;
 	width: 6px;
 	height: 10px;
 	position: absolute;
@@ -181,52 +181,51 @@
 	margin-top: -5px;
 	content: "";
 }
-.itemProd .name {
+.gal-item .gal-name {
 	padding: 0px 12px 7px;
-	line-height: 1.4em
+	line-height: 20px;
 }
-.itemProd .clor01 {
+ 
+.gal-item.gal-s-1 .readmore {
+	background: rgba(0, 161, 225, 0.9);
 }
-.itemProd .bgClor01 {
-	background: hsla(197,100%,44%,.9);
-}
-.itemProd .bgClor02 {
-	background:hsla(353,81%,44%,.9);
+.gal-item.gal-s-2 .readmore {
+	background: rgba(250, 221, 0, 0.9);
 	color:#452600;
 
 }
-.itemProd .bgClor03 {
-	background:hsla(79,59%,55%,.9);
+.gal-item.gal-s-3 .readmore{
+	background: rgba(165, 208, 72, 0.9);
 	color:#452600;
 
 }
-.itemProd .bgClor04 {
-	background: hsla(53,100%,49%,.9);
+.gal-item.gal-s-4 .readmore {
+	background: rgba(214, 192, 26, 0.9);
 	color:#452600;
 }
-.itemProd .bgClor05 {
-	background: hsla(14,100%,50%,.9);
+.gal-item.gal-s-5 .readmore {
+	background: rgba(104,109,86,0.9);
 }
-.itemProd .bgClor06 {
-	background: hsla(79,54%,48%,.9);
+.gal-item.gal-s-6 .readmore {
+	background: rgba(193,175,42,0.9);
 }
-.divSlider01 {
+.main-gallery {
 	overflow: hidden;
 }
-.divSlider01 .container {
+.main-gallery .container {
 	width: 1020px
 }
-.divSlider01 .bx-viewport {
+.main-gallery .bx-viewport {
 	overflow: visible !important
 }
-.divSlider01 .bx-controls-direction {
+.main-gallery .bx-controls-direction {
 	position: absolute;
 	left: 0;
 	bottom: -58px;
 	width: 100%;
 	text-align: center;
 }
-.divSlider01 .bx-wrapper .bx-prev, .divSlider01 .bx-wrapper .bx-next {
+.main-gallery .bx-wrapper .bx-prev, .main-gallery .bx-wrapper .bx-next {
 	position: relative;
 	top: auto;
 	width: 40px;
@@ -239,11 +238,11 @@
 	margin: 0 35px;
 	overflow: hidden;
 }
-.divSlider01 .bx-wrapper .bx-prev {
+.main-gallery .bx-wrapper .bx-prev {
 	left: auto;
 	background-image: url(images/btn_prev_s2.png);
 }
-.divSlider01 .bx-wrapper .bx-next {
+.main-gallery .bx-wrapper .bx-next {
 	right: auto;
 	background-image: url(images/btn_next_s2.png);
 }
@@ -257,10 +256,10 @@
 }
 .divSlider02 .container {
 }
-.divSlider02 .itemProd {
+.divSlider02 .gal-item {
 	margin: 0 10px;
 }
-.divSlider02 .active .itemProd .name {
+.divSlider02 .active .gal-item .name {
 }
 .divSlider02 .bx-wrapper .bx-prev, .divSlider02 .bx-wrapper .bx-next {
 	width: 40px;

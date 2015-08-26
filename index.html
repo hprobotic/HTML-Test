@@ -12,8 +12,10 @@
   <link rel="stylesheet" href="style.css">
   <link rel="stylesheet" href="mobile.css">
 </head>
+<body>
+  <div id="menu-overlay" class="mb" style="display: none;"></div>
 <!-- Header -->
-<div class="header">
+<header class="header">
   <div class="topbar">
     <div class="container clearfix">
       <div class="topmenu">
@@ -24,8 +26,8 @@
           </form>
         </div>
         <ul class="t-menu list-inline f-r">
-          <li><a class="trans" href="/">アクセス</a></li>
-          <li><a class="trans" href="/">お問い合わせ</a></li>
+          <li><a href="/">アクセス</a></li>
+          <li><a href="/">お問い合わせ</a></li>
         </ul>
       </div>
       <div class="clearfix"></div>
@@ -34,21 +36,23 @@
   <div class="brand-logo">
     <div class="container">
       <div class="logo">
-        <a class="trans" href="/">
+        <a href="/">
           <img class="md01" src="images/logo.png" alt="Logo">
           <img class="sm01" src="images/logo_mb.png" alt="Mobile Menu">
         </a>
       </div>
-      <a href="#" class="trans menusm "><img src="images/mbmenu.png" alt=" "></a>
+      <a href="#" class="navbar-toggle open">
+        <img src="images/mbmenu.png" alt=" ">
+      </a>
       <div class="clearfix"></div>
 
     </div>
   </div>
 
-</div>
+</header>
 <!-- End: Header -->
 <!-- Navigation -->
-<div class="nav">
+<nav class="nav">
   <div class="container">
     <ul class="list-inline main-nav clearfix d-only">
       <li>
@@ -89,14 +93,15 @@
     </ul>
   </div>
   <div class="sm01">
-    <div class="nav_sm">
-      <p class="pclose">
-        <a href="#close" class="trans closeNav">
-          <img src="http://nutec-net.co.jp/wp-content/themes/fc304/img/common/close.png" alt=""> </a>
-      </p>
-      <ul class="ulnav_sm">
+    <div class="fake_nav offcanvas navmenu-fixed-right">
+      <button type="button" class="navbar-toggle close" data-toggle="offcanvas" data-target="mb_menu" data-canvas="body">
+      <span class="icon-x"></span>
+      </button>
+      <div class="clearfix"></div>
+      <ul class="mb_menu">
         <li>
           <a href="/">
+
             <span>
               事業内容
             </span>
@@ -105,63 +110,63 @@
         <li>
           <a href="/">
             <span>
-              事業内容
+              開発実績
             </span>
           </a>
         </li>
         <li>
           <a href="/">
             <span>
-              事業内容
+              企業情報
             </span>
           </a>
         </li>
         <li>
           <a href="/">
             <span>
-              事業内容
+              採用情報
             </span>
           </a>
         </li>
         <li>
           <a href="/">
             <span>
-              事業内容
+              ブログ
             </span>
           </a>
         </li>
       </ul>
     </div>
   </div>
-</div>
+</nav>
 <!-- End:Navigation -->
 <!-- Main Content -->
 <div class="main-content" id="homepage">
-  <div class="divBanner">
+  <div class="main-slider">
     <div class="container">
-      <ul class="ulSlider">
+      <ul class="fwSlider">
         <li>
-          <a class="trans" href="/">
-            <img class="md" src="images/slider/dktop1.jpg" alt=" ">
-            <img class="sm" src="images/slider/mb1.jpg" alt=" ">
+          <a href="/">
+            <img class="d-only" src="images/slider/dktop1.jpg" alt=" ">
+            <img class="m-only" src="images/slider/mb1.jpg" alt=" ">
           </a>
         </li>
         <li>
-          <a class="trans" href="/">
-            <img class="md" src="images/slider/dktop2.jpg" alt=" ">
-            <img class="sm" src="images/slider/mb2.jpg" alt=" ">
+          <a href="/">
+            <img class="d-only" src="images/slider/dktop2.jpg" alt=" ">
+            <img class="m-only" src="images/slider/mb2.jpg" alt=" ">
           </a>
         </li>
         <li>
-          <a class="trans" href="/">
-            <img class="md" src="images/slider/dktop3.jpg" alt=" ">
-            <img class="sm" src="images/slider/mb3.jpg" alt=" ">
+          <a href="/">
+            <img class="d-only" src="images/slider/dktop3.jpg" alt=" ">
+            <img class="m-only" src="images/slider/mb3.jpg" alt=" ">
           </a>
         </li>
         <li>
-          <a class="trans" href="/">
-            <img class="md" src="images/slider/dktop4.jpg" alt=" ">
-            <img class="sm" src="images/slider/mb4.jpg" alt=" ">
+          <a href="/">
+            <img class="d-only" src="images/slider/dktop4.jpg" alt=" ">
+            <img class="m-only" src="images/slider/mb4.jpg" alt=" ">
           </a>
         </li>
       </ul>
@@ -172,132 +177,122 @@
       <h2 class="block-title">Information</h2>
       <ul class="nf-list">
         <li class="n-item st1">
-          <p class="date">2014/11/7</p>
-          <div class="info">
-            <i class="icon"><img src="images/icon_pdf.png" alt=" "></i>
-            <a class="trans" href="/">11月4日付で、株式会社セルコ（本社・所沢市）に資本参加いたしました。</a>
+          <div class="n-date">2014/11/7</div>
+          <div class="n-info">
+            <i class="n-icn"><img src="images/icon_pdf.png" alt=" "></i>
+            <a href="/">11月4日付で、株式会社セルコ（本社・所沢市）に資本参加いたしました。</a>
           </div>
         </li>
         <li class="n-item st2">
-          <p class="date">2014/11/7</p>
-          <div class="info">
-            <i class="icon"><img src="images/icon_excel.png" alt=" "></i>
-            <a class="trans" href="/">11月4日付で、株式会社セルコ（本社・所沢市）に資本参加いたしました。2014/11/7 11月4日付で、
+          <div class="n-date">2014/11/7</div>
+          <div class="n-info">
+            <i class="n-icn"><img src="images/icon_excel.png" alt=" "></i>
+            <a href="/">11月4日付で、株式会社セルコ（本社・所沢市）に資本参加いたしました。2014/11/7 11月4日付で、
 株式会社セルコ（本社・所沢市）に資本参加いたしました。</a>
           </div>
         </li>
         <li class="n-item st1">
-          <p class="date">2014/11/7</p>
-          <div class="info">
-            <i class="icon"><img src="images/icon_arrow.png" alt=" "></i>
-            <a class="trans" href="/">2014/11/7 11月4日付で、株式会社セルコ（本社・所沢市）に資本参加いたしました。テキストテキストテキスト
+          <div class="n-date">2014/11/7</div>
+          <div class="n-info">
+            <i class="n-icn"><img src="images/icon_arrow.png" alt=" "></i>
+            <a href="/">2014/11/7 11月4日付で、株式会社セルコ（本社・所沢市）に資本参加いたしました。テキストテキストテキスト
 テキストテキストテキストストテキストストテキストストテキストストテキストストテキストストテキストストテキ
 ストストテキストストテキストストテキストストテキスト</a>
           </div>
         </li>
       </ul>
       <p class="readmore">
-        <a class="trans" href="/">更新情報一覧</a>
+        <a href="/">更新情報一覧</a>
       </p>
 
     </div>
   </div>
   <div class="main-gallery">
-    <div class="divSlider01">
       <div class="container">
         <ul class="ulSliderProd ulSlider01">
 
           <li>
-            <div class="itemProd">
-              <a class="trans" href="/">
+            <div class="gal-item gal-s-1">
+              <a href="/">
                 <img src="images/infoslider/img1.jpg" alt=" ">
-                <div class="info">
-                  <p class="name">システム設計開発から
+                <div class="gal-capt">
+                  <p class="gal-name">システム設計開発から
+
                     <br/>保守運用まで信頼のニューテック品質</p>
-                  <p class="viewmore bgClor01">事業内容</p>
+
+                  <p class="readmore">事業内容・製品</p>
                 </div>
               </a>
             </div>
           </li>
           <li>
-            <div class="itemProd">
-              <a class="trans" href="/">
+            <div class="gal-item gal-s-2">
+              <a href="/">
                 <img src="images/infoslider/img2.jpg" alt=" ">
-                <div class="info">
-                  <p class="name">システム設計・開発
-                    <br/>ひとすじ30年以上の経験</p>
-                  <p class="viewmore bgClor04">企業情報</p>
+                <div class="gal-capt">
+                  <p class="gal-name">システム設計・開発
+                    <br /> ひとすじ30年以上の経験
+                  </p>
+                  <p class="readmore">企業情報</p>
                 </div>
               </a>
             </div>
           </li>
           <li>
-            <div class="itemProd">
-              <a class="trans" href="/">
+            <div class="gal-item gal-s-3">
+              <a href="/">
                 <img src="images/infoslider/img3.jpg" alt=" ">
-                <div class="info">
-                  <p class="name">会社と社員、
-                    <br/>共に成長する場でありたい。</p>
-                  <p class="viewmore bgClor03">採用情報</p>
+                <div class="gal-capt">
+                  <p class="gal-name">会社と社員、
+                    <br /> 共に成長する場でありたい。
+                  </p>
+                  <p class="readmore">採用情報</p>
                 </div>
               </a>
             </div>
           </li>
           <li>
-            <div class="itemProd">
-              <a class="trans" href="/">
+            <div class="gal-item gal-s-4">
+              <a href="/">
                 <img src="images/infoslider/blank.jpg" alt=" ">
-                <div class="info">
-                  <p class="name">xxx</p>
-                  <p class="viewmore bgClor04">xxx</p>
+                <div class="gal-capt">
+                  <p class="gal-name">xxx</p>
+                  <p class="readmore">xxx</p>
                 </div>
               </a>
             </div>
           </li>
           <li>
-            <div class="itemProd">
-              <a class="trans" href="/">
+            <div class="gal-item gal-s-5">
+              <a href="/">
                 <img src="images/infoslider/blank.jpg" alt=" ">
-                <div class="info">
-                  <p class="name">xxx</p>
-                  <p class="viewmore bgClor05">xxxx</p>
+                <div class="gal-capt">
+                  <p class="gal-name">xxx</p>
+                  <p class="readmore">xxxx</p>
                 </div>
               </a>
             </div>
           </li>
           <li>
-            <div class="itemProd">
-              <a class="trans" href="/">
+            <div class="gal-item  gal-s-6">
+              <a href="/">
                 <img src="images/infoslider/blank.jpg" alt=" ">
-                <div class="info">
-                  <p class="name">xxx</p>
-                  <p class="viewmore bgClor05">xxxx</p>
+                <div class="gal-capt">
+                  <p class="gal-name">xxx</p>
+                  <p class="readmore">xxxx</p>
                 </div>
               </a>
             </div>
           </li>
-          <li>
-            <div class="itemProd">
-              <a class="trans" href="/">
-                <img src="images/infoslider/blank.jpg" alt=" ">
-                <div class="info">
-                  <p class="name">xxx</p>
-                  <p class="viewmore bgClor05">xxxx</p>
-                </div>
-              </a>
-            </div>
-          </li>
+           
         </ul>
       </div>
-    </div>
-
-
   </div>
   <div class="main-intro">
 
     <div class="container">
-      <h2 class="titleNutech">システム設計・開発で30年　～ニューテック株式会社～</h2>
-      <div class="caption">
+      <h1 class="intro-title">システム設計・開発で30年　～ニューテック株式会社～</h1>
+      <div class="intro-info">
         横浜に事務所を構え、東京・神奈川を中心にシステム設計・開発に携わってきました。
         <br /> お客様の信頼を得ることを何よりの価値であると考え、一つ一つの仕事を大切に続けてきたからこそ、 30年以上の歴史を作ってくることができました。
         <br /> 基幹業務システム、販売管理システムの構築をはじめとし、多様なシステム構築の実績があります。
@@ -314,44 +309,44 @@
   <div class="container">
     <ul class="col-4 clearfix">
       <li>
-        <a class="trans" href="/">
+        <a href="/">
           <img src="images/metroinfo/img1.jpg" alt="">
         </a>
       </li>
       <li>
-        <a class="trans" href="/">
+        <a href="/">
           <img src="images/metroinfo/img2.jpg" alt="">
         </a>
       </li>
       <li>
-        <a class="trans" href="/">
+        <a href="/">
           <img src="images/metroinfo/img3.jpg" alt="">
         </a>
       </li>
       <li>
-        <a class="trans" href="/">
+        <a href="/">
           <img src="images/metroinfo/img4.jpg" alt="">
         </a>
       </li>
     </ul>
     <ul class="col-2 clearfix">
       <li>
-        <a class="trans" href="/">
+        <a href="/">
           <img src="images/metroinfo/img5.jpg" alt="">
         </a>
       </li>
       <li>
-        <a class="trans" href="/">
+        <a href="/">
           <img src="images/metroinfo/img6.jpg" alt="">
         </a>
       </li>
     </ul>
-    <div class="d-only">
-      <li>
-        <a class="trans" href="/">
+    <div class="d-only col-1">
+      
+        <a href="/">
           <img src="images/metroinfo/img7.jpg" alt="">
         </a>
-      </li>
+      
     </div>
   </div>
 
@@ -360,39 +355,39 @@
   <div class="ft-link">
     <div class="container clearfix">
       <ul class="ftnavchild havesub">
-        <li class="stt1"><a class="trans ctrl" href="/">事業内容</a></li>
+        <li class="stt1"><a class="ctrl" href="/">事業内容</a></li>
         <ul class="childnav">
-          <li><a href="/" class="trans">システム設計・開発</a></li>
-          <li><a href="/" class="trans">システム保守・運用</a></li>
-          <li><a href="/" class="trans">パッケージ</a></li>
-          <li><a href="/" class="trans">ＥＣサイト運営</a></li>
-          <li><a href="/" class="trans">ビジネスパートナー募集</a></li>
+          <li><a href="/" >システム設計・開発</a></li>
+          <li><a href="/" >システム保守・運用</a></li>
+          <li><a href="/" >パッケージ</a></li>
+          <li><a href="/" >ＥＣサイト運営</a></li>
+          <li><a href="/" >ビジネスパートナー募集</a></li>
         </ul>
       </ul>
       <ul class="ftnavchild havesub">
-        <li class="stt1"><a class="trans ctrl" href="/">事業内容</a></li>
+        <li class="stt1"><a class="ctrl" href="/">事業内容</a></li>
         <ul class="childnav">
-          <li><a href="/" class="trans">システム設計・開発</a></li>
-          <li><a href="/" class="trans">システム保守・運用</a></li>
-          <li><a href="/" class="trans">パッケージ</a></li>
-          <li><a href="/" class="trans">ＥＣサイト運営</a></li>
-          <li><a href="/" class="trans">ビジネスパートナー募集</a></li>
+          <li><a href="/" >システム設計・開発</a></li>
+          <li><a href="/" >システム保守・運用</a></li>
+          <li><a href="/" >パッケージ</a></li>
+          <li><a href="/" >ＥＣサイト運営</a></li>
+          <li><a href="/" >ビジネスパートナー募集</a></li>
         </ul>
       </ul>
       <ul class="ftnavchild">
-        <li class="stt1"><a class="trans dropNav" href="/">事業内容</a></li>
-        <li><a href="/" class="trans">システム設計・開発</a></li>
-        <li><a href="/" class="trans">システム保守・運用</a></li>
-        <li><a href="/" class="trans">パッケージ</a></li>
-        <li><a href="/" class="trans">ＥＣサイト運営</a></li>
+        <li class="stt1"><a class="" href="/">事業内容</a></li>
+        <li><a href="/" >システム設計・開発</a></li>
+        <li><a href="/" >システム保守・運用</a></li>
+        <li><a href="/" >パッケージ</a></li>
+        <li><a href="/" >ＥＣサイト運営</a></li>
       </ul>
     </div>
   </div>
   <div class="ft-info">
     <div class="container">
-      <p class="name">ニューテック株式会社</p>
+      <p class="name">株式会社ニューテック</p>
       <div class="info">
-        <p>〒221-0031</p>
+        <p>〒221-0031 </p>
         <p>神奈川県横浜市神奈川区新浦島町1-1-25
           <span class="mbr">テクノウェイブ100(8F)</span>
         </p>
@@ -403,8 +398,8 @@
   <div class="ft-copyright">
     <div class="container clearfix">
       <ul class="sitelink">
-        <li><a class="trans" href="/">個人情報保護方針</a></li>
-        <li><a class="trans" href="/">サイトマップ</a></li>
+        <li><a href="/">サイトポリシー</a></li>
+        <li><a href="/">サイトマップ</a></li>
       </ul>
       <p class="copyright">© NUTEC corp.</p>
     </div>
